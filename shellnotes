@@ -1,3 +1,10 @@
 parameter to run script
 -x debug the value
 -v debug display the code being executed
+
+
+bash script does not have execute permission, but can be run using 
+bash [script]
+
+without bash, it will check permission, then create subshell bash + [script]
+when use bash command to run script, just kick off the script in the current shell instead of subshell
