@@ -1,0 +1,57 @@
+0 - beginning of the line
+$ - end of line
+w - each word forward
+b - each word backwar
+15w - 15 words forward
+: set number
+: set all
+
+u - undo
+3dd - delete 3 lines
+
+dw - delete a word
+2dw - delete current word and next word
+
+x - delete character
+X - delete character to the left
+r - replace one character without going to text mode
+~ - change case
+J - join with the line below
+p - past ( works with dd as well as yy )
+yw - copy word
+yy - copy one line
+2yy - copy 2 lines
+
+
+---------------------------------
+: ! command
+run command without leaving vi
+
+!! it can bring the command result back and insert intot the file
+
+: sh  when finish type exit
+
+---------------------------------
+: 4,10w newfile
+copy between line 4 to 10 and paste to a new file called newfile
+
+g/wordtosearch/p - global search for a word and print them out
+
+g/wordtosearc[hH]/p
+
+:s/coyp/copy/g -- replace all occurencies coyp with copy on the current line
+
+:s/coyp/copy/ -- replace first occurance of coyp with copy on current line
+
+:%s/yak/hippo/g -- global search and replace yak with hippo
+
+1,15s/yak/hippo/g -- replace between line 1-15, s-standards for search, yak to be searched g - replace all, without g - first occurance on each line
+
+set nomagic -- ignore regular expression
+
+set list -- display all end of line 
+
+
+sed -n will suppress output completely
+
+sed -n '9s/banana/apple/p' wordfile -- with /p it will print only the modified lines
