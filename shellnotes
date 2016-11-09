@@ -19,3 +19,12 @@ echo "${name}n"
 Always put braces around variable 
 
 export only share variable to child shell, but not parent shell
+
+insert new line   -e is required
+echo -e \n"
+
+PS1 - when single quote, eval each time
+      when double quote, eval first time
+
+-----------------------------------math----------------------------
+(())
