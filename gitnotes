@@ -2,3 +2,9 @@ git commit -m "updated .bashrc"
 git push -u origin master
 git add [filename]
 git commit  -a -m "message"
+
+git init
+git add [file]
+git commit -m "message"
+git remote add origin https://user:pass@github.com/wanpengliu/shell.git
+git push -u origin master
