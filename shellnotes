@@ -1,0 +1,3 @@
+parameter to run script
+-x debug the value
+-v debug display the code being executed
