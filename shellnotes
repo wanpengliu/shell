@@ -8,3 +8,11 @@ bash [script]
 
 without bash, it will check permission, then create subshell bash + [script]
 when use bash command to run script, just kick off the script in the current shell instead of subshell
+
+ALWAYS use double quotation when use variable "$variable"
+
+variable="abc" -- No space b4 after then = sign
+
+name="wa"
+echo "${name}n"
+Always put braces around variable 
