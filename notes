@@ -44,3 +44,6 @@ hard link is normally for same disk
 	can use relative path
 soft link is normally for differnt disk mount
 	must use absoluate path
+
+
+  shell expansion
