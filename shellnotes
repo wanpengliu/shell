@@ -32,3 +32,6 @@ PS1 - when single quote, eval each time
 ((a=2*3))
 
 (( a= b + c )) //variable b and c didn't need $ 
+
+
+-------------------------------------------------------------

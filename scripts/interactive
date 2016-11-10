@@ -1,0 +1,40 @@
+. ../functions/function.sh
+
+fileCount(){
+
+a=0
+  while [ "$a" -eq 0 ]
+      do
+  echo -n "please provide the full path : "
+  read inputpath dummy
+         
+  ##     [[ -d $inputpath ]] && findFile $inputpath
+ ##      a=1
+ if [ -d "$inputpath" ]
+     then 
+     findFile $inputpath
+     break
+     else
+         echo
+         echo -e "invalid directory entered"
+         echo
+         fi
+     done
+     echo 
+     echo " script finished "
+
+}
+
+echo "please enter an option below
+      a. File Count 
+      b. Math
+      "
+      read input dummy
+## [[ "${input}" = "a" ]] && echo "you entered $input"
+      
+if [ "${input}" = "a" ]
+   then 
+    fileCount
+fi
+
+

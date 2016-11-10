@@ -22,8 +22,10 @@ divide() {
 }
 
 findFile() {
-    find $1 -maxdepth 1 -type f 2>/dev/null |   wc -l
+   numb=$(find $1 -maxdepth 1 -type f 2>/dev/null |   wc -l)
+   echo -n "find $numb files in total"
 }
+
 
 findDir() {
     find $1 -maxdepth 1 -type d 2>/dev/null | wc -l
