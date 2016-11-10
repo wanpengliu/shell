@@ -1,5 +1,13 @@
 #!/bin/bash
 
+argu_input(){
+
+ echo "argument input function "
+	echo " number of input parameter is $#"
+
+}
+
+
 argu_validation() {
 	if [ "$1" -eq "$2" ]
 	then

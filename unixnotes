@@ -1,3 +1,4 @@
+--------------useful commands -------------------------------
 d -15 file | tail -n +4
 -15 only the first 15 lines
 +4 only start from line 4 and the rest of the file, -n is required in this case
