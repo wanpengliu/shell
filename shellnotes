@@ -27,4 +27,8 @@ PS1 - when single quote, eval each time
       when double quote, eval first time
 
 -----------------------------------math----------------------------
-(())
+((a=1+3))
+
+((a=2*3))
+
+(( a= b + c )) //variable b and c didn't need $ 
