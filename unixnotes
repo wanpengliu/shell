@@ -24,3 +24,5 @@ soft link is normally for differnt disk mount
 ALWAYS use double quotation when use variable "$variable"
 ALWAYS use braces {} around variable ${name}liu ${10}
 NEVER leave any space for variable assignment var1=hello var2=23
+
+i love you
