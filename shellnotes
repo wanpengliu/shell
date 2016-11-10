@@ -35,3 +35,9 @@ PS1 - when single quote, eval each time
 
 
 -------------------------------------------------------------
+while [ "$1" -eq 0 ]
+if [ -d "$2" ]
+    then
+      echo "$2"
+      else
+fi          

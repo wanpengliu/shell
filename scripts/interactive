@@ -1,5 +1,12 @@
 . ../functions/function.sh
 
+validation(){
+if [ $# -lt 1 ]
+    then
+    echo "need to input more parameter"
+    fi
+}
+
 fileCount(){
 
 a=0
@@ -35,6 +42,8 @@ echo "please enter an option below
 if [ "${input}" = "a" ]
    then 
     fileCount
+    else
+        validation
 fi
 
 
