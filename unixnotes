@@ -1,0 +1,49 @@
+d -15 file | tail -n +4
+-15 only the first 15 lines
++4 only start from line 4 and the rest of the file, -n is required in this case
+
+
+ls -x /etc 
+cross the screen
+
+ls -R /etc
+structure of the directory and all sub directory 
+
+ls id s*
+
+? match single character
+ls file?
+
+PS1='$PWD '
+double quotation mark does not work
+
+
+ls -z >test 2>&1
+
+set -o noclobber
+set +o noclobber
+
+tr : , <passwd >passwd2
+pass pass file to tr and redirect the result to passwd2
+if both use passwd, then >passwd will be executed first and wipe the file completely
+
+
+awk
+
+awk '{print $5}'
+sar -r | grep -i average | awk '{print $4}'
+
+grep -l finds works in file and return file name 
+
+!! - last command
+!V - last v command
+
+fc -l
+
+hard link is normally for same disk
+	can use relative path
+soft link is normally for differnt disk mount
+	must use absoluate path
+
+
+  shell expansion
