@@ -41,3 +41,53 @@ if [ -d "$2" ]
       echo "$2"
       else
 fi          
+-------------------- condition ------------------------
+if [ "$input" = "xyz" ] ;  then echo "equal xyz " ; elif [ "$input" = "abc" ] ; then echo "equal to abc" ; else echo "does not equal" ; fi
+
+if [ $input ] ; then ... ; fi -- check for not null 
+
+if [ ! "$input" ] ; then echo "input is null" ; fi
+ALWAYS USE doube quotation for string comparision to prevent null value 
+
+NEVER use double quotation with numeric condition statement
+
+if [ $input > 2 ] ; then echo "true" ; fi 
+
+ls -l [filename] | cut -c2 -- permission of the owner for read
+
+[[ -f $input && -r $input ]] && echo "input is a file and can be read"
+
+if (( a > b )) ; then echo "a greater than b" ; elif (( a == b )) ; then echo "a equal to b " ; else echo "a smaller than b" ; fi
+
+[[ ("$a" == "A" || "$a" == "a") && "$b" == "b" ]] && echo "yes"
+
+echo "${a:-"abc"}" - if a is null, use abc instead
+echo "${a:="abc"}" - if a is null, use abc and assign a with value abc
+
+USEFUL
+grep -i line2 afile &>/dev/null && echo "success"
+
+who | grep tom &>/dev/null
+/home/tom/shell $ if (( $? == 0 )) ; then echo "tom is logged in" ; fi
+
+
+( who | grep tom &>/dev/null ) && echo "tom is logged in"
+
+who | grep tom &>/dev/null && echo "tom is logged in " || echo "tom is not logged in "
+&& deal with success
+|| deal with not success
+
+
+who | grep torm &>/dev/null &&  echo "tom is logged in " && echo "tom still logged in "  || echo "tom is not logged in "
+grep -i line afile &>/dev/null && echo "file line" && grep line afile &>/dev/null || echo "fail to find [lL]ine in file"
+
+
+who | grep tom &>/dev/null && { echo "tom logged in " ; exit 2; }
+semi colon required at the very end
+
+echo ${#input} - # check the number of character in the input paramter
+-------------------- find------------------------
+
+find /home -size +3000c -size -10000c -exec ls -l  {} \;
+greater than 3000 character and smaller than 10000 character
+
