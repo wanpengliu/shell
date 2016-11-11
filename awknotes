@@ -1,0 +1,10 @@
+awk 'NR==1, NR==10 {print NR, $0}' /etc/passwd
+NR line number
+$0 - whole record 
+
+
+awk '{ FS = ":" } { print NR,  $1 }' /etc/passwd
+FS field separator
+
+
+ls -l | awk '{print $3}' 
