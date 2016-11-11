@@ -1,6 +1,6 @@
 #!/bin/bash
 
-trap '' 2 3 
+trap 'echo nice try; sleep 5;' 2  
 # trap control c, so that it won't exit
 
 while true
