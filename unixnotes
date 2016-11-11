@@ -34,6 +34,14 @@ $* - all input parameters
 $# - number of input paramters
 $@ - interpret input parameter using IFS
 
+--------------CONDITION ---------------------------------
+
+
+ALWAYS use space in IF condition
+test command can be used to check condition result
+test -d dir; echo $?
+
+
 
 -------------- MATH---------------------------------
 
