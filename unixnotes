@@ -8,6 +8,7 @@ awk '{print $5}'
 sar -r | grep -i average | awk '{print $4}'
 
 grep -l finds works in file and return file name 
+grep -c count the number of occurences
 
 !! - last command
 !V - last v command
@@ -18,6 +19,9 @@ hard link is normally for same disk
 soft link is normally for differnt disk mount
 	must use absoluate path
 
+stty -a key mapping
+
+
 -------------- variables and string ---------------------------------
 
 
@@ -25,4 +29,16 @@ ALWAYS use double quotation when use variable "$variable"
 ALWAYS use braces {} around variable ${name}liu ${10}
 NEVER leave any space for variable assignment var1=hello var2=23
 
-i love you
+$0 - script name
+$* - all input parameters
+$# - number of input paramters
+$@ - interpret input parameter using IFS
+
+
+-------------- MATH---------------------------------
+
+((x=1 + 3))
+((y = 2 * 4 ))
+((z = 3 \* 3))
+((w= 6/2))
+echo "scale=3; 4/3"| bc -l
